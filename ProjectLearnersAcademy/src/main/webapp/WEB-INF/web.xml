@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JDBCStatement</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>StudentList</servlet-name>
+  	<servlet-class>com.school.StudentList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentList</servlet-name>
+  	<url-pattern>/studentlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>StudentClassReport</servlet-name>
+  	<servlet-class>com.school.StudentClassReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentClassReport</servlet-name>
+  	<url-pattern>/stuclassreport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>TeacherClassReport</servlet-name>
+  	<servlet-class>com.school.TeacherClassReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TeacherClassReport</servlet-name>
+  	<url-pattern>/tchclassreport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>SubjectClassReport</servlet-name>
+  	<servlet-class>com.school.SubjectClassReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SubjectClassReport</servlet-name>
+  	<url-pattern>/subjclassreport</url-pattern>
+  </servlet-mapping>
+</web-app>
